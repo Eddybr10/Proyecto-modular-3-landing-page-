@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+.relative px-6 py-20 md:py-64{
+  background-color: white;
+}
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+::selection {
+  background: #01f7ff;
+}
+
+
+.degradedBlue {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #01a59d;
+  padding: 5px 0;
+}
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+}
+
+
+.swiper-pagination-bullet-active {
+  background: rgba(3, 209, 255, 0.6) !important;
+}
+
+.slider-horizontal {
+  display: flex;
+  animation: infinite 5000ms linear infinite backwards;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
